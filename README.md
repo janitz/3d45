@@ -1,14 +1,12 @@
 # 3d45
 tools and information about dremel digilab 3d45
 ## 3d45_status
-to get the status of the printer, you have to HTTP-POST GETPRINTERSTATUS<br>
-(replace the ip with your printers ip)<br>
-```batch
+to get the status of the printer, you have to HTTP-POST GETPRINTERSTATUS<br/>
+(replace the ip with your printers ip)<br/>
+```
 curl 192.168.0.26/command -X POST -H "Content-Type: application/x-form-urlencoded" -d "GETPRINTERSTATUS"
 ```
-<br>
-this will return a json string like this<br>
-(but in one line)<br>
+this will return a json string like this (but in one line)<br/>
 ```json
 {
     "buildPlate_target_temperature": 70,
@@ -33,8 +31,8 @@ this will return a json string like this<br>
     "totalTime": 12514
 }
 ```
-<br>
 ## 3d45_livestream
-to watch your printer print just open this link<br>
-(replace the ip with your printers ip)<br>
-`http://192.168.0.26:10123/?action=stream`
+to watch your printer print just open this link (replace the ip with your printers ip)<br/>
+```
+http://192.168.0.26:10123/?action=stream
+```
